@@ -16,8 +16,11 @@ result = {}
 # Recorremos las partes
 for part in parts:
     if part != "":  # Verifica explícitamente que la parte no esté vacía
+        # Para sacar el nombre, tenemos que separar los # de las cadenas. Iterando en cada una de ellas. 
         numbers_part, name = part.split('#')
+        # Usamos la función map() para recorrer la lista, transformar los strings a floats, usando las comas como separador, así, cada vez que encuentre una coma, el número será transformado a float.
         numbers = list(map(float, numbers_part.split(',')))
+        # Añadimos los nombres, que estos a su vez, estarán asociados con los números.
         result[name] = numbers
 
 # Ahora result contiene {'Ana': [7.8, 6.0, 4.5, 9.8], 'Miguel': [2.3, 3.4, 4.5, 2.1]}
