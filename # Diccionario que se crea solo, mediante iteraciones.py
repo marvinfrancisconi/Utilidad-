@@ -11,7 +11,7 @@ for i in range(cantidad):
     alumno = input(f"¿Quién es el alumno {i+1}? ").strip().capitalize()
     nota = input(f"¿Cuál es la nota del alumno {alumno}? ")
     print("-"*20)
-    # Aquí es dónde se añadi al diccionario.
+    # Aquí es dónde se añade al diccionario.
     diccionario[alumno] = nota
 
 # Imprimirlo en un formato más legible.
