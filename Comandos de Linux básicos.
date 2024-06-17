@@ -1,0 +1,28 @@
+Para que entiendas primero lo que vas a ver, creo que es importante que primero se entienda el significado del porqué se usan estos comandos.
+
+En tu computador personal, ya sea un computador que use como SO Windows, macOS o Linux, lo más normal es que tú veas solamente la interfaz gráfica, por debajo de la interfaz gráfica hay una gran línea de comandos que se ejecutan.
+Ya sea cuando: creas una carpeta, abres una carpeta, guardas algún archivo, ejecutas un archivo, abres una aplicación, etc. Por debajo de esa interfaz, hay una gran serie de comandos que se están ejecutando que hacen posible la funcionalidad a la que estás intentando acceder.
+
+Lo que haremos es usar el SO Linux distribución de Amazon desde su core, desde su núcleo: el terminal. Toda la funcionalidad que quieras utilizar, tendrás que aplicarla de forma manual.
+
+Comandos sencillos:
+yum: es una librería de Linux que sirve para actualizar y gestionar paquetes de instalación.
+yum update: Lo más recomendable como primer paso en tu máquina virtual, es actualizar todas las librerías y comandos de Linux, esto se realiza con yum update.
+
+sudo: Ejecutar acción como super usuario. Traducción directa: "superuser do", es decir, "el superusuario hace".
+su: Cambiar de usuario. Traducción directa: "switch user", es decir, "cambiar de usuario." 
+su nombreDeUsuario: (reemplaza nombreDeUsuario por el nombre del usuario al cuál quieres ir) cambiar de un usuario a otro específico, ten en cuenta que si el usuario al que te quieres cambiar, tiene protegida la cuenta con contraseña, te va a solicitar la contraseña para poder acceder.
+Para acceder al usuario raíz: puedes combinar sudo con el su (sudo su) para cambiar al usuario raíz de tu máquina, es decir, el usuario administrador. Para cambiar al usuario raíz, tienes que estar primero en un usuario que por defecto, sea administrador, en este caso es el ec2-User.
+
+cd: cambiar directorio. Traducción directa: "change directory", es decir, "cambiar directorio". Esto te permitirá acceder a una carpeta, piensa que es como hacerle doble click a la carpeta, para usarlo correctamente debes colocar cd nombreDeCarpeta.
+cd/: ir a la carpeta ráiz. Esto te llevará a la carpeta raíz, generalmente, uno siempre está parado en la carpeta "home", el cd/ te permitirá ir a la carpeta raíz, como dar un salto atrás.
+
+mkdir: crear directorio (carpeta). Traducción directa: "make directory", es decir "crear directorio". Esto te va a permitir crear una carpeta nueva, ten en cuenta que la carpeta se va a crear en la carpeta sobre la cuál estás parado. Si estás por ejemplo en "Descargas", la carpeta creada se va a encontrar dentro de la carpeta "Descargas".
+rmdir: remover directorio (carpeta). Traducción directa: "remove directory", es decir "remover directorio". Esto va a eliminar la carpeta que tenga el nombre que ingreses, la forma de usarlo es rmdir nombreDeCarpeta, el comando va a buscar la carpeta para poder borrarla.
+
+pwd: mostrar directorio actual. Traducción directa: "print work directory", es decir, "imprime el directorio de trabajo". El pwd te va a imprimr la ruta del archivo sobre el cual estás parado.
+
+ls: listar. Traducción directa: "list", es decir, "lista". Te va a mostrar la lista de archivos de la carpeta sobre la cual estás parado.
+ls-l: listado de permisos. Te va a mostrar un listado sobre la información de los permisos de la carpeta sobre la cuál estás parado.
+
+** Seguir desarrollando **
